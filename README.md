@@ -1,3 +1,5 @@
+技术栈：koa2+mysql
+
 # shopServe
 购物商城后台
 
