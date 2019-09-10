@@ -44,5 +44,4 @@ app.on('error', (err, ctx) => {
 app.listen(404,()=>{
   console.log('项目已启动')
 })
-
 module.exports = app
