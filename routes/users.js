@@ -116,7 +116,6 @@ router.get('/delAddress',async(ctx,next)=>{
 router.post('/passcode',async(ctx,next)=>{
     let obj=ctx.request.body.params
     obj.pay=Crypt.encrypt(obj.pay)
-    ctx.body="111"
     await MysqlCode.insertPassCode([obj.pay,obj.id]).then((res)=>{
         ctx.body="创建成功"
     })
